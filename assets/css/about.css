@@ -71,6 +71,10 @@
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
 }
+.single-about-txt-nav {
+    font-size: 16px;
+    color: #999fb3;
+}
 .single-about-add-info {
     margin: 35px 0;
 }
