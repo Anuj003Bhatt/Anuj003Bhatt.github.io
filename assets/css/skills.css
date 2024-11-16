@@ -1,0 +1,54 @@
+.skills-section {
+    background-color: #374151;
+    padding: 5em;
+}
+
+/* Grid Layout for the Skill Cards */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+}
+
+/* Individual Skill Card */
+.skill-card {
+    background-color: #fff;
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 180px;
+    max-width: 220px;
+}
+
+
+.skill-card .icon img {
+    margin-right: 0.5em;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Skill Card Text */
+.skill-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0.5em;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
