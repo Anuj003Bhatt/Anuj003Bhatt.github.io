@@ -6,7 +6,7 @@
 /* Grid Layout for the Skill Cards */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     justify-items: center;
 }
 
@@ -20,7 +20,7 @@
     display: flex;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 135px;
+    width: 160px;
     max-width: 220px;
 }
 

@@ -14,7 +14,7 @@
 }
 
 .masthead {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('../img1/head2.jpeg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('../img/head2.jpeg');
     background-size: cover;
 
 }
