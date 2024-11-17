@@ -58,6 +58,11 @@
     }
 }
 
+.about-title {
+    margin-top: 1em;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 /*.single-about-txt*/
 .single-about-txt h3 {
     font-size:18px;
