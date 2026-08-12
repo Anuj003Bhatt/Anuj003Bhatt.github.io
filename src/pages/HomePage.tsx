@@ -55,7 +55,7 @@ export function HomePage() {
       <div className="container">
         <SectionHeader kicker="06 / Credentials" title="Signals that matter." lead="Selected validation and education, kept intentionally concise." />
         <div className="capability-grid">
-          <Capability index="TECHNICAL VALIDATION" title="Google" description="Successfully cleared the full technical selection process for an Application Engineer role." />
+          <Capability index="TECHNICAL VALIDATION" title="Google" description="Completed and cleared Google’s full technical interview pipeline." />
           <Capability index="EDUCATION" title="B.E. — Computer Science" description="Honours · M.B.M. Engineering College, Jodhpur" />
           <Capability index="PROFICIENCY" title="English · Hindi" description="English — Full Professional Proficiency. Hindi — Native or Bilingual Proficiency." />
         </div>
