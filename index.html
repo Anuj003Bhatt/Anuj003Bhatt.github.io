@@ -1,18 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#050505" />
-    <meta name="author" content="Anuj Bhatt" />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
-    <title>Anuj Bhatt — Technical Lead & Systems Architect</title>
-    <meta name="description" content="Anuj Bhatt — Technical Lead and Systems Architect focused on distributed systems, fintech, cybersecurity, cloud architecture and engineering leadership." />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="author" content="Anuj Bhatt" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+  <title>Anuj Bhatt — Technical Lead & Systems Architect</title>
+  <meta name="description"
+    content="Anuj Bhatt — Technical Lead and Systems Architect focused on distributed systems, fintech, cybersecurity, cloud architecture and engineering leadership." />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="root"></div>
+
+  <script>
+    (function () {
+      var search = window.location.search;
+
+      if (search.startsWith('?/')) {
+        var path = search
+          .slice(2)
+          .split('&')[0]
+          .replace(/~and~/g, '&');
+
+        var decodedPath = decodeURIComponent(path);
+
+        var queryIndex = search.indexOf('&');
+
+        var query =
+          queryIndex >= 0
+            ? '?' + search.slice(queryIndex + 1)
+            : '';
+
+        window.history.replaceState(
+          null,
+          null,
+          '/' + decodedPath + query + window.location.hash
+        );
+      }
+    })();
+  </script>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

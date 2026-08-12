@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      (function () {
+        var location = window.location;
+
+        var redirect =
+          location.protocol +
+          '//' +
+          location.host +
+          '/?/' +
+          location.pathname.slice(1) +
+          location.search +
+          location.hash;
+
+        location.replace(redirect);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
