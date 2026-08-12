@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Architecture — Anuj Bhatt</title>
+    <meta name="description"
+        content="Architecture principles and systems thinking from Anuj Bhatt, Technical Lead and Systems Architect.">
+    <link rel="canonical" href="https://anuj003bhatt.github.io/architecture.html">
+    <meta name="theme-color" content="#050505">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body><a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Anuj Bhatt home"><span class="brand-mark">AB</span><span
+          class="brand-copy">ANUJ BHATT<small>SYSTEMS ARCHITECT</small></span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="work/index.html">Work</a>
+        <a href="experience.html">Experience</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="about.html">About</a>
+        <!-- <a href="insights/index.html">Insights</a> -->
+        <a href="testimonials.html">Recommendations</a>
+        <a class="nav-cta" href="contact.html">Contact ↗</a></nav>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="container">
+      <a href="work/index.html">Work</a>
+      <a href="experience.html">Experience</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="about.html">About</a>
+      <!-- <a href="insights/">Insights</a> -->
+      <a href="testimonials.html">Recommendations</a>
+      <a href="contact.html">Contact</a></div>
+  </nav>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">Architecture</div>
+                <h1>Think in constraints. Design for failure.</h1>
+                <p class="hero-copy">Architecture is where scalability, resilience, data integrity, security and
+                    operational reality meet.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="architecture">
+                    <div class="architecture-grid">
+                        <div class="architecture-copy">
+                            <div class="kicker">Illustrative architecture model</div>
+                            <h3>A system is a set of trade-offs.</h3>
+                            <p>The diagrams on this site are illustrative rather than representations of confidential
+                                production topologies. They show the kinds of system relationships and failure-handling
+                                patterns that appear in my work.</p>
+                            <div class="principles">
+                                <div class="principle">SCALE</div>
+                                <div class="principle">RESILIENCE</div>
+                                <div class="principle">CONSISTENCY</div>
+                                <div class="principle">OBSERVABILITY</div>
+                                <div class="principle">SECURITY</div>
+                                <div class="principle">EFFICIENCY</div>
+                            </div>
+                        </div><svg class="arch-svg" viewBox="0 0 520 390" role="img"
+                            aria-label="Illustrative architecture flow">
+                            <line class="flow" x1="260" y1="55" x2="260" y2="110" />
+                            <line class="flow" x1="260" y1="155" x2="110" y2="215" />
+                            <line class="flow" x1="260" y1="155" x2="410" y2="215" />
+                            <line class="flow" x1="110" y1="260" x2="260" y2="320" />
+                            <line class="flow" x1="410" y1="260" x2="260" y2="320" />
+                            <rect class="box" x="190" y="15" width="140" height="40" rx="9" /><text x="221"
+                                y="39">INGRESS</text>
+                            <rect class="box" x="185" y="110" width="150" height="45" rx="9" /><text x="216"
+                                y="137">ORCHESTRATION</text>
+                            <rect class="box" x="55" y="215" width="110" height="45" rx="9" /><text x="84"
+                                y="242">EVENTS</text>
+                            <rect class="box" x="355" y="215" width="110" height="45" rx="9" /><text x="383"
+                                y="242">SERVICES</text>
+                            <rect class="box" x="190" y="320" width="140" height="45" rx="9" /><text x="222"
+                                y="347">DATA + STATE</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="kicker">Principles</div>
+                        <h2 class="section-title">Six ideas I return to.</h2>
+                    </div>
+                    <p class="section-lead">These principles are a synthesis of the engineering work represented in the
+                        current résumé and portfolio—not a claim that every system used every principle in the same way.
+                    </p>
+                </div>
+                <div class="capability-grid">
+                    <article class="capability reveal">
+                        <div class="capability-number">01</div>
+                        <h3>Scale</h3>
+                        <p>Separate coordination from execution and design components so throughput can grow without
+                            creating a single bottleneck.</p>
+                    </article>
+                    <article class="capability reveal">
+                        <div class="capability-number">02</div>
+                        <h3>Resilience</h3>
+                        <p>Assume components fail. Build detection, retries, remediation and alerting into the system
+                            rather than treating them as afterthoughts.</p>
+                    </article>
+                    <article class="capability reveal">
+                        <div class="capability-number">03</div>
+                        <h3>Consistency</h3>
+                        <p>Know where correctness is non-negotiable and design coordination around the data invariants
+                            that matter.</p>
+                    </article>
+                    <article class="capability reveal">
+                        <div class="capability-number">04</div>
+                        <h3>Observability</h3>
+                        <p>Make system state and failure modes visible enough for engineers to reason about production
+                            behavior.</p>
+                    </article>
+                    <article class="capability reveal">
+                        <div class="capability-number">05</div>
+                        <h3>Security</h3>
+                        <p>Treat sensitive data, trust boundaries and operational access as first-class architectural
+                            concerns.</p>
+                    </article>
+                    <article class="capability reveal">
+                        <div class="capability-number">06</div>
+                        <h3>Efficiency</h3>
+                        <p>Optimize cloud resources and data access without sacrificing correctness or maintainability.
+                        </p>
+                    </article>
+                    <article class="capability reveal">
+                        <div class="capability-number">07</div>
+                        <h3>Evolution</h3>
+                        <p>Modernize incrementally when the system cannot afford a rewrite, using patterns such as
+                            Strangler Fig to move capabilities safely toward service boundaries.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="kicker">Selected systems</div>
+                    <h2>See these principles in practice.</h2><a class="button button-primary" href="work/index.html">Explore case
+                        studies ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-title">ANUJ BHATT</div>
+                <div class="footer-note">TECHNICAL LEAD · SYSTEMS ARCHITECT</div>
+            </div>
+            <div class="footer-links"><a href="work/index.html">Work</a><a href="experience.html">Experience</a><a
+                    href="contact.html">Contact</a></div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
