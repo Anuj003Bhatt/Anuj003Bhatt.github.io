@@ -12,7 +12,6 @@ export function Footer() {
         <div className="footer-links">
           <a href={profile.github} rel="noopener noreferrer">GitHub</a>
           <a href={profile.linkedin} rel="noopener noreferrer">LinkedIn</a>
-          <a href={`mailto:${profile.email}`}>Email</a>
           <a href={profile.resume}>Résumé</a>
         </div>
       </div>
