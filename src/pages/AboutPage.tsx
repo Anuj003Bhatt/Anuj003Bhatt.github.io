@@ -21,7 +21,7 @@ export function AboutPage() {
       <SectionHeader kicker="Currently" title="Building for scale." lead="Currently a Technical Lead at Pirimid Fintech, working across distributed payment systems, infrastructure evolution, architecture and engineering leadership." />
       <div className="capability-grid">
         <InfoCard label="EDUCATION" title="M.B.M. Engineering College" text="B.E. — Computer Science and Engineering, Honours." />
-        <InfoCard label="TECHNICAL VALIDATION" title="Google" text="Successfully cleared the full technical selection process with Google." />
+        <InfoCard label="TECHNICAL VALIDATION" title="Google" text="Completed and cleared Google’s full technical interview pipeline." />
         <InfoCard label="CONTACT" title="Open to conversation" text="Engineering leadership, system architecture, distributed systems and ambitious technology problems." />
       </div>
     </div></section>
