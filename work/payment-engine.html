@@ -12,27 +12,38 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body><a class="skip-link" href="#main">Skip to content</a>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-        <div class="container nav"><a class="brand" href="../"><span class="brand-mark">AB</span><span
-                    class="brand-copy">ANUJ BHATT<small>SYSTEMS ARCHITECT</small></span></a>
-            <nav class="nav-links"><a href="index.html">Work</a><a href="../experience.html">Experience</a><a
-                    href="../architecture.html">Architecture</a><a href="../about.html">About</a><a class="nav-cta"
-                    href="../contact.html">Contact ↗</a></nav><button class="menu-button" aria-label="Open menu"
-                aria-expanded="false">☰</button>
-        </div>
+    <div class="container nav">
+      <a class="brand" href="../index.html" aria-label="Anuj Bhatt home"><span class="brand-mark">AB</span><span
+          class="brand-copy">ANUJ BHATT<small>SYSTEMS ARCHITECT</small></span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../architecture.html">Architecture</a>
+        <a href="../about.html">About</a>
+        <!-- <a href="insights/index.html">Insights</a> -->
+        <a href="../testimonials.html">Recommendations</a>
+        <a class="nav-cta" href="../contact.html">Contact ↗</a></nav>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
     </header>
-    <nav class="mobile-menu">
-        <div class="container"><a href="../">Home</a><a href="index.html">Work</a><a
-                href="../experience.html">Experience</a><a href="../architecture.html">Architecture</a><a
-                href="../about.html">About</a><a href="../insights/">Insights</a><a href="../contact.html">Contact</a>
-        </div>
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="container">
+      <a href="index.html">Work</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../architecture.html">Architecture</a>
+      <a href="../about.html">About</a>
+      <!-- <a href="insights/">Insights</a> -->
+      <a href="../testimonials.html">Recommendations</a>
+      <a href="../contact.html">Contact</a></div>
     </nav>
     <main id="main">
         <section class="page-hero">
             <div class="container">
                 <div class="breadcrumb">Work / Distributed Systems</div>
-                <h1>National-Scale SIP Payment Engine</h1>
+                <h1>Distributed Recurring Payment Engine</h1>
                 <p class="hero-copy">Architected a high-concurrency SIP processor using Java, Spring Boot and
                     Zookeeper-based distributed locking to bypass horizontal scaling limitations.</p>
             </div>
