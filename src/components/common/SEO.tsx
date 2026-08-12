@@ -51,7 +51,6 @@ function upsertPersonSchema(enabled: boolean) {
 
   const script = existing ?? document.createElement('script');
   script.id = PERSON_SCHEMA_ID;
-  script.type = 'application/ld+json';
   script.textContent = JSON.stringify(schema);
   if (!existing) document.head.appendChild(script);
 }
